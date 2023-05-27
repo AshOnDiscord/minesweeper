@@ -168,7 +168,7 @@ const viewSquare = async (x: number, y: number) => {
   clearInterval(timerLoop.value)
 }
 
-const recursiveView = async (x: number, y: number) => {
+const recursiveView = async (x: number, y: number): Promise<any> => {
   if (x < 0 || y < 0 || x > size.value || y > size.value || !board.value[x] || !board.value[x][y])
     return
   //   console.log(x, y)
