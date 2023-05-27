@@ -1,6 +1,6 @@
 # Minesweeper
 
-A simple web minesweeper game. [Demo](http://aod-minesweeper.surge.sh/)
+A simple web minesweeper game. [Demo](https://aod-minesweeper.surge.sh/)
 
 ## Project
 
