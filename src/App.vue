@@ -207,8 +207,8 @@ createBoard()
           :key="`${i} ${j}`"
           class="w-8 h-8 border-white border bg-slate-500"
           :class="{
-            'bg-slate-300': square.revealed,
-            'bg-red-500': square.type === serverType.bomb
+            '!bg-slate-300': square.revealed && square.type !== serverType.bomb,
+            '!bg-red-500': square.revealed && square.type === serverType.bomb
           }"
           @click="viewSquare(i, j)"
           v-on:contextmenu.prevent="square.flagged = true"
